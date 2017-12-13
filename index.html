@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Туристичне агенство</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Jquery UI -->
+        <link rel="stylesheet" href="/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="/style/main.css">
+        <!-- Bootstrap CSS -->
+        <script src="/script/jquery.js"></script>
+        <script src="https://unpkg.com/popper.js"></script>
+        <script src="script/bootstrap.js"></script>
+        <script src="/script/jquery-ui.js"></script>
+        <script src="/jquery-validation/dist/jquery.validate.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <h1>Туристичне агенство</h1>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-item active">
+                                        <div class="img"></div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>First slide</h3>
+                                            <p>...</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img"></div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Second slide</h3>
+                                            <p>...</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img"></div>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Third slide</h3>
+                                            <p>...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Тури</a></li>
+                            <li><a href="#tabs-2">Оформлення</a></li>
+                        </ul>
+                        <div>
+                            <div class="row" id="tabs-1">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <div class="accordion">
+                                            <h3>Країни</h3>
+                                            <div>
+                                                <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                            </div>
+                                            <h3>Готелі</h3>
+                                            <div>
+                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                                            </div>
+                                            <h3>Section 3</h3>
+                                            <div>
+                                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                                                <ul>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                    <li>List item</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="tabs-2">
+                                <form class="form" method="GET" action="">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <div class="form-group">
+                                                <label for="city">Місто</label>
+                                                <select class="form-control" id="city">
+                                                    <option>Виберіть місто</option>
+                                                    <optgroup label="Польща">
+                                                        <option>Варшава</option>
+                                                        <option>Краків</option>
+                                                        <option>Познань</option>
+                                                        <option>Гданськ</option>
+                                                    </optgroup>
+                                                    <optgroup label="Англія">
+                                                        <option>Лондон</option>
+                                                        <option>Ліверпуль</option>
+                                                        <option>Манчестер</option>
+                                                    </optgroup>
+                                                    <optgroup label="Німеччина">
+                                                        <option>Берлін</option>
+                                                        <option>Мюнхен</option>
+                                                        <option>Кельн</option>
+                                                    </optgroup>
+                                                    <optgroup label="Чехія">
+                                                        <option>Прага</option>
+                                                    </optgroup>
+                                                    <optgroup label="Франція">
+                                                        <option>Париж</option>
+                                                        <option>Версаль</option>
+                                                        <option>Марсель</option>
+                                                        <option>Орлеан</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="nights">К-сть ночей</label>
+                                                <input type="text" class="spinner" id="nights" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="dataFrom">Дата відправлення</label>
+                                                <input type="text" class="form-control datepicker" id="dataFrom" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <div class="form-group">
+                                                    <legend>Харчування: </legend>
+                                                    <label for="food-1">Сніданки</label>
+                                                    <input type="checkbox" name="food-1" id="food-1" class="checkbox-radio">
+                                                    <label for="food-2">Обіди</label>
+                                                    <input type="checkbox" name="food-2" id="food-2" class="checkbox-radio">
+                                                    <label for="food-3">Вечері</label>
+                                                    <input type="checkbox" name="food-3" id="food-3" class="checkbox-radio">
+                                            </div>
+                                            <div class="form-group">
+                                                <p>
+                                                    <label for="price">Ціна:</label>
+                                                    <input type="text" id="price" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                                </p>
+                                                <div class="slider-range-price"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <p>
+                                                    <label for="rating">Категорія готелю:</label>
+                                                    <input type="text" id="rating" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                                </p>
+                                                <div class="slider-range-rating"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="btn btn-primary" type="submit" value="Submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="/script/main.js"></script>
+        </body>
+    </html>
