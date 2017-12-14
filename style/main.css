@@ -1,28 +1,40 @@
 .carousel-item:nth-child(2) .img,
 .carousel-item:nth-child(3) .img,
 .carousel-item:nth-child(4) .img {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
 }
 
 .carousel-item:nth-child(2) .img {
-	background-image: url("/images/slide_1.jpg");\
+    background-image: url("/images/slide_1.jpg");
 }
+
 .carousel-item:nth-child(3) .img {
-	background-image: url("/images/slide_2.jpg");\
+    background-image: url("/images/slide_2.jpg");
 }
+
 .carousel-item:nth-child(4) .img {
-	background-image: url("/images/slide_3.jpg");\
+    background-image: url("/images/slide_3.jpg");
 }
 
 .carousel-caption {
-	bottom: auto;
-	top: 25px;
-	color: #000;
+    bottom: auto;
+    top: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
 }
 
 .carousel-caption h3 {
     font-size: 4.75rem;
 }
+
+#tabs {
+    margin-bottom: 100px;
+}
+
+.error {
+    color: #ff5a5d;
+}
+

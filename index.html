@@ -1,182 +1,435 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Туристичне агенство</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/style/bootstrap.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Jquery UI -->
-        <link rel="stylesheet" href="/jquery-ui/jquery-ui.min.css">
-        <link rel="stylesheet" href="/style/main.css">
-        <!-- Bootstrap CSS -->
-        <script src="/script/jquery.js"></script>
-        <script src="https://unpkg.com/popper.js"></script>
-        <script src="script/bootstrap.js"></script>
-        <script src="/script/jquery-ui.js"></script>
-        <script src="/jquery-validation/dist/jquery.validate.js"></script>
-    </head>
-    <body>
-        <div class="container">
+<head>
+    <title>Туристичне агенство</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <!-- Bootstrap CSS -->
+    <script src="/script/jquery.js"></script>
+    <script src="/script/popper.js"></script>
+    <script src="/script/bootstrap.js"></script>
+    <script src="/script/jquery-ui.js"></script>
+    <script src="/jquery-validation/dist/jquery.validate.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h1>Туристичне агенство</h1>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h1>Туристичне агенство</h1>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div id="carousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-item active">
-                                        <div class="img"></div>
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>First slide</h3>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="img"></div>
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>Second slide</h3>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="img"></div>
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>Third slide</h3>
-                                            <p>...</p>
-                                        </div>
-                                    </div>
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-item active">
+                                <div class="img"></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>First slide</h3>
                                 </div>
-                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img"></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Second slide</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="img"></div>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Third slide</h3>
+                                </div>
                             </div>
                         </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div id="tabs">
-                        <ul>
-                            <li><a href="#tabs-1">Тури</a></li>
-                            <li><a href="#tabs-2">Оформлення</a></li>
-                        </ul>
-                        <div>
-                            <div class="row" id="tabs-1">
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                        <div class="accordion">
-                                            <h3>Країни</h3>
-                                            <div>
-                                                <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-                                            </div>
-                                            <h3>Готелі</h3>
-                                            <div>
-                                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-                                            </div>
-                                            <h3>Section 3</h3>
-                                            <div>
-                                                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-                                                <ul>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                    <li>List item</li>
-                                                </ul>
-                                            </div>
+                </div>
+            </div>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Пошук туру</a></li>
+                    <li><a href="#tabs-2">Корисна інформація</a></li>
+                </ul>
+                <div>
+                    <div class="row" id="tabs-1">
+                        <form class="form" id="searchForm">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="form-group">
+                                        <label for="city">Місто</label>
+                                        <select class="form-control" id="city" name="city">
+                                            <option value="default">Виберіть місто</option>
+                                            <optgroup label="Польща">
+                                                <option>Варшава</option>
+                                                <option>Краків</option>
+                                                <option>Познань</option>
+                                                <option>Гданськ</option>
+                                            </optgroup>
+                                            <optgroup label="Англія">
+                                                <option>Лондон</option>
+                                                <option>Ліверпуль</option>
+                                                <option>Манчестер</option>
+                                            </optgroup>
+                                            <optgroup label="Німеччина">
+                                                <option>Берлін</option>
+                                                <option>Мюнхен</option>
+                                                <option>Кельн</option>
+                                            </optgroup>
+                                            <optgroup label="Чехія">
+                                                <option>Прага</option>
+                                            </optgroup>
+                                            <optgroup label="Франція">
+                                                <option>Париж</option>
+                                                <option>Версаль</option>
+                                                <option>Марсель</option>
+                                                <option>Орлеан</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dataFrom">Дата відправлення</label>
+                                        <input type="text" class="form-control datepicker" id="dataFrom"
+                                               name="dataFrom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nights">К-сть ночей</label>
+                                        <input type="text" class="spinner" id="nights" name="nights">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                    <div class="form-group">
+                                        <label for="food">Харчування</label>
+                                        <div id="food">
+                                            <label for="food-1">Сніданки</label>
+                                            <input type="checkbox" name="food" id="food-1" class="checkbox-radio">
+                                            <label for="food-2">Обіди</label>
+                                            <input type="checkbox" name="food" id="food-2" class="checkbox-radio">
+                                            <label for="food-3">Вечері</label>
+                                            <input type="checkbox" name="food" id="food-3" class="checkbox-radio">
                                         </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>
+                                            <label for="price">Ціна:</label>
+                                            <input type="text" id="price" readonly
+                                                   style="border:0; color:#f6931f; font-weight:bold;">
+                                        </p>
+                                        <div class="slider-range-price"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>
+                                            <label for="rating">Категорія готелю:</label>
+                                            <input type="text" id="rating" readonly
+                                                   style="border:0; color:#f6931f; font-weight:bold;">
+                                        </p>
+                                        <div class="slider-range-rating"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text-center">
+                                        <button class="btn btn-lg btn-primary">Пошук</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row" id="tabs-2">
-                                <form class="form" method="GET" action="">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                            <div class="form-group">
-                                                <label for="city">Місто</label>
-                                                <select class="form-control" id="city">
-                                                    <option>Виберіть місто</option>
-                                                    <optgroup label="Польща">
-                                                        <option>Варшава</option>
-                                                        <option>Краків</option>
-                                                        <option>Познань</option>
-                                                        <option>Гданськ</option>
-                                                    </optgroup>
-                                                    <optgroup label="Англія">
-                                                        <option>Лондон</option>
-                                                        <option>Ліверпуль</option>
-                                                        <option>Манчестер</option>
-                                                    </optgroup>
-                                                    <optgroup label="Німеччина">
-                                                        <option>Берлін</option>
-                                                        <option>Мюнхен</option>
-                                                        <option>Кельн</option>
-                                                    </optgroup>
-                                                    <optgroup label="Чехія">
-                                                        <option>Прага</option>
-                                                    </optgroup>
-                                                    <optgroup label="Франція">
-                                                        <option>Париж</option>
-                                                        <option>Версаль</option>
-                                                        <option>Марсель</option>
-                                                        <option>Орлеан</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="nights">К-сть ночей</label>
-                                                <input type="text" class="spinner" id="nights" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="dataFrom">Дата відправлення</label>
-                                                <input type="text" class="form-control datepicker" id="dataFrom" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                            <div class="form-group">
-                                                    <legend>Харчування: </legend>
-                                                    <label for="food-1">Сніданки</label>
-                                                    <input type="checkbox" name="food-1" id="food-1" class="checkbox-radio">
-                                                    <label for="food-2">Обіди</label>
-                                                    <input type="checkbox" name="food-2" id="food-2" class="checkbox-radio">
-                                                    <label for="food-3">Вечері</label>
-                                                    <input type="checkbox" name="food-3" id="food-3" class="checkbox-radio">
-                                            </div>
-                                            <div class="form-group">
-                                                <p>
-                                                    <label for="price">Ціна:</label>
-                                                    <input type="text" id="price" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                                </p>
-                                                <div class="slider-range-price"></div>
-                                            </div>
-                                            <div class="form-group">
-                                                <p>
-                                                    <label for="rating">Категорія готелю:</label>
-                                                    <input type="text" id="rating" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                                                </p>
-                                                <div class="slider-range-rating"></div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input class="btn btn-primary" type="submit" value="Submit">
-                                            </div>
-                                        </div>
+                        </form>
+                    </div>
+                    <div class="row" id="tabs-2">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                <div class="accordion">
+                                    <h3>Країни</h3>
+                                    <div>
+                                        <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra
+                                            leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque
+                                            vulputate.</p>
                                     </div>
-                                </form>
+                                    <h3>Готелі</h3>
+                                    <div>
+                                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus.
+                                            Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit,
+                                            faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
+                                            faucibus urna. </p>
+                                    </div>
+                                    <h3>Section 3</h3>
+                                    <div>
+                                        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia
+                                            ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                                        <ul>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <script src="/script/main.js"></script>
-        </body>
-    </html>
+            <div>
+                <div id="result" style="display: none;">
+                    <table class="table table-bordered table-hover">
+                        <colgroup>
+                            <col width="171"/>
+                            <col width="117"/>
+                            <col width="69"/>
+                            <col width="82"/>
+                            <col width="64"/>
+                            <col width="59"/>
+                            <col width="64"/>
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th width="171" height="4">
+                                <p class="text-center">Назва готелю</p>
+                            </th>
+                            <th width="117">
+                                <p class="text-center">Курорт</p>
+                            </th>
+                            <th width="69">
+                                <p class="text-center">Кількість днів</p>
+                            </th>
+                            <th width="82">
+                                <p class="text-center">Харчування</p>
+                            </th>
+                            <th width="64">
+                                <p class="text-center">Кімната</p>
+                            </th>
+                            <th width="59">
+                                <p class="text-center">Вартість</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center">The Rock Hotel 3*</p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Шарм-эль-Шейх</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">
+                                    367$
+                                </p>
+                                <p class="text-center">
+                                    <button class="btn btn-primary btn-sm checkout">Замовити</button>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center">Dive Inn Resort 4*</p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Шарм-эль-Шейх</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Сніданок і вечеря</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">Промо</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">391$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center">Gardenia Plaza Resort 4*</p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Шарм-эль-Шейх</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">408$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center"> Aurora Cyrene Resort (Ex.Crystal Cyrene Resort) 4*</p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Шарм-эль-Шейх</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">408$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center"><a href="https://tophotels.ru/main/hotel/al5189"> El Samaka Beach
+                                    3* </a></p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Хургада</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">445$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="5">
+                                <p class="text-center"><a href="https://tophotels.ru/main/hotel/al95036"> Mirage New
+                                    Hawaii
+                                    Resorts And Spa 4* </a></p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Хургада</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">470$</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="171" height="4">
+                                <p class="text-center"><a href="https://tophotels.ru/main/hotel/al28073"> Panorama
+                                    Bungalows
+                                    Hurghada 4* </a></p>
+                            </td>
+                            <td width="117">
+                                <p class="text-center">Хургада</p>
+                            </td>
+                            <td width="69">
+                                <p class="text-center">7</p>
+                            </td>
+                            <td width="82">
+                                <p class="text-center">Все включено</p>
+                            </td>
+                            <td width="64">
+                                <p class="text-center">стандарт</p>
+                            </td>
+                            <td width="59">
+                                <p class="text-center">453$</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Payment Details
+                            </h3>
+                            <div class="checkbox pull-right">
+                                <label>
+                                    <input type="checkbox" />
+                                    Remember
+                                </label>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="cardNumber">
+                                        CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                               required autofocus />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Pay</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/script/main.js"></script>
+</body>
+</html>
